@@ -17,7 +17,7 @@ struct GoalAddView: View {
     @State private var goalLevel2Date: Date?
     @State private var goalLevel3: String = ""
     @State private var goalLevel3Date: Date?
-    @State private var goalCategory: String = ""
+    @State private var goalCategory: String = "Zdrowie"
     @State private var goalNotes: String = ""
     @Environment(\.presentationMode) var presentationMode
 
@@ -42,8 +42,9 @@ struct GoalAddView: View {
                 }
                 
                 Section(header: Text("Informacje o celu")) {
-                    TextField("Szczegółowe informacje", text: $goalDescription)
-                        .frame(height: 80)
+                    TextField("Szczegółowe informacje", text: $goalDescription, axis: .vertical)
+                        .frame(minHeight: 80)
+                        .lineLimit(5...10)
                 }
                 
                 Section(header: Text("Poziomy i daty")) {
@@ -73,8 +74,9 @@ struct GoalAddView: View {
                 }
                 
                 Section(header: Text("Notatka")) {
-                    TextEditor(text: $goalNotes)
-                        .frame(height: 100)
+                    TextField("Dodaj notatkę", text: $goalNotes, axis: .vertical)
+                        .frame(minHeight: 80)
+                        .lineLimit(5...10)
                 }
             }
             .navigationBarTitle(isEditing ? "Edytuj cel" : "Dodaj cel", displayMode: .inline)
