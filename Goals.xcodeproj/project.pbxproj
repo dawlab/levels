@@ -8,17 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		BDB5BB002A2B7E5700B16C57 /* GoalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */; };
-		BDB5BB022A2B7E5700B16C57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB012A2B7E5700B16C57 /* ContentView.swift */; };
 		BDB5BB042A2B7E5800B16C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */; };
 		BDB5BB072A2B7E5800B16C57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB5BB062A2B7E5800B16C57 /* Preview Assets.xcassets */; };
+		BDB5BB0E2A2B7E7500B16C57 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB0D2A2B7E7500B16C57 /* Goal.swift */; };
+		BDB5BB112A2B7EBA00B16C57 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BDB5BB102A2B7EBA00B16C57 /* Realm */; };
+		BDB5BB132A2B7EBA00B16C57 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDB5BB122A2B7EBA00B16C57 /* RealmSwift */; };
+		BDB5BB152A2B80BD00B16C57 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB142A2B80BD00B16C57 /* GoalViewModel.swift */; };
+		BDB5BB192A2B82B400B16C57 /* GoalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB182A2B82B400B16C57 /* GoalListView.swift */; };
+		BDB5BB1B2A2B88AC00B16C57 /* GoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB1A2A2B88AC00B16C57 /* GoalDetailView.swift */; };
+		BDB5BB1D2A2C91FA00B16C57 /* GoalAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB1C2A2C91FA00B16C57 /* GoalAddView.swift */; };
+		BDB5BB212A2CB49C00B16C57 /* StatTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB202A2CB49C00B16C57 /* StatTabView.swift */; };
+		BDB5BB272A2CB5E200B16C57 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */; };
+		BDB5BB2B2A2CB67000B16C57 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB2A2A2CB67000B16C57 /* InstructionsView.swift */; };
+		BDB5BB2D2A2CB67A00B16C57 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB2C2A2CB67A00B16C57 /* AuthorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDB5BAFC2A2B7E5700B16C57 /* Goals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsApp.swift; sourceTree = "<group>"; };
-		BDB5BB012A2B7E5700B16C57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDB5BB062A2B7E5800B16C57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDB5BB0D2A2B7E7500B16C57 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		BDB5BB142A2B80BD00B16C57 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		BDB5BB182A2B82B400B16C57 /* GoalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListView.swift; sourceTree = "<group>"; };
+		BDB5BB1A2A2B88AC00B16C57 /* GoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailView.swift; sourceTree = "<group>"; };
+		BDB5BB1C2A2C91FA00B16C57 /* GoalAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalAddView.swift; sourceTree = "<group>"; };
+		BDB5BB202A2CB49C00B16C57 /* StatTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabView.swift; sourceTree = "<group>"; };
+		BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BDB5BB2A2A2CB67000B16C57 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		BDB5BB2C2A2CB67A00B16C57 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB5BB132A2B7EBA00B16C57 /* RealmSwift in Frameworks */,
+				BDB5BB112A2B7EBA00B16C57 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */,
-				BDB5BB012A2B7E5700B16C57 /* ContentView.swift */,
+				BDB5BB1E2A2CB43300B16C57 /* Model */,
+				BDB5BB1F2A2CB47500B16C57 /* Views */,
 				BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */,
 				BDB5BB052A2B7E5800B16C57 /* Preview Content */,
 			);
@@ -65,6 +86,77 @@
 				BDB5BB062A2B7E5800B16C57 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDB5BB1E2A2CB43300B16C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB0D2A2B7E7500B16C57 /* Goal.swift */,
+				BDB5BB142A2B80BD00B16C57 /* GoalViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDB5BB1F2A2CB47500B16C57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB202A2CB49C00B16C57 /* StatTabView.swift */,
+				BDB5BB232A2CB4C600B16C57 /* GoalsListView */,
+				BDB5BB222A2CB4B300B16C57 /* AddGoalView */,
+				BDB5BB242A2CB4DF00B16C57 /* GoalsDetailsView */,
+				BDB5BB252A2CB50400B16C57 /* SettingsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BDB5BB222A2CB4B300B16C57 /* AddGoalView */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB1C2A2C91FA00B16C57 /* GoalAddView.swift */,
+			);
+			path = AddGoalView;
+			sourceTree = "<group>";
+		};
+		BDB5BB232A2CB4C600B16C57 /* GoalsListView */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB182A2B82B400B16C57 /* GoalListView.swift */,
+			);
+			path = GoalsListView;
+			sourceTree = "<group>";
+		};
+		BDB5BB242A2CB4DF00B16C57 /* GoalsDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB1A2A2B88AC00B16C57 /* GoalDetailView.swift */,
+			);
+			path = GoalsDetailsView;
+			sourceTree = "<group>";
+		};
+		BDB5BB252A2CB50400B16C57 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB282A2CB65800B16C57 /* HowToUseThisApp */,
+				BDB5BB292A2CB66000B16C57 /* Author */,
+				BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		BDB5BB282A2CB65800B16C57 /* HowToUseThisApp */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB2A2A2CB67000B16C57 /* InstructionsView.swift */,
+			);
+			path = HowToUseThisApp;
+			sourceTree = "<group>";
+		};
+		BDB5BB292A2CB66000B16C57 /* Author */ = {
+			isa = PBXGroup;
+			children = (
+				BDB5BB2C2A2CB67A00B16C57 /* AuthorView.swift */,
+			);
+			path = Author;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +175,10 @@
 			dependencies = (
 			);
 			name = Goals;
+			packageProductDependencies = (
+				BDB5BB102A2B7EBA00B16C57 /* Realm */,
+				BDB5BB122A2B7EBA00B16C57 /* RealmSwift */,
+			);
 			productName = Goals;
 			productReference = BDB5BAFC2A2B7E5700B16C57 /* Goals.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +207,9 @@
 				Base,
 			);
 			mainGroup = BDB5BAF32A2B7E5600B16C57;
+			packageReferences = (
+				BDB5BB0F2A2B7EBA00B16C57 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = BDB5BAFD2A2B7E5700B16C57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDB5BB022A2B7E5700B16C57 /* ContentView.swift in Sources */,
+				BDB5BB1B2A2B88AC00B16C57 /* GoalDetailView.swift in Sources */,
+				BDB5BB272A2CB5E200B16C57 /* SettingsView.swift in Sources */,
+				BDB5BB212A2CB49C00B16C57 /* StatTabView.swift in Sources */,
+				BDB5BB192A2B82B400B16C57 /* GoalListView.swift in Sources */,
+				BDB5BB152A2B80BD00B16C57 /* GoalViewModel.swift in Sources */,
+				BDB5BB2D2A2CB67A00B16C57 /* AuthorView.swift in Sources */,
+				BDB5BB1D2A2C91FA00B16C57 /* GoalAddView.swift in Sources */,
+				BDB5BB0E2A2B7E7500B16C57 /* Goal.swift in Sources */,
+				BDB5BB2B2A2CB67000B16C57 /* InstructionsView.swift in Sources */,
 				BDB5BB002A2B7E5700B16C57 /* GoalsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +446,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BDB5BB0F2A2B7EBA00B16C57 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BDB5BB102A2B7EBA00B16C57 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDB5BB0F2A2B7EBA00B16C57 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		BDB5BB122A2B7EBA00B16C57 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDB5BB0F2A2B7EBA00B16C57 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BDB5BAF42A2B7E5600B16C57 /* Project object */;
 }
