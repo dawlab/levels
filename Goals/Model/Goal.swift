@@ -21,7 +21,10 @@ class Goal: Object, Identifiable {
     @Persisted var level3Completed: Bool = false
     @Persisted var category: String = ""
     @Persisted var goalDescription: String = ""
-    @Persisted var notes: String = ""
+    @Persisted var notes: List<Note> = List<Note>()
+    @Persisted var level1Photo: Data?
+    @Persisted var level2Photo: Data?
+    @Persisted var level3Photo: Data?
 
     var isCompleted: Bool {
         level1Completed && level2Completed && level3Completed
@@ -43,17 +46,13 @@ class Goal: Object, Identifiable {
 
     var status: String {
         if level3Completed {
-            return "Cel zakończony"
+            return L10n.goalCompleted
         } else if level2Completed {
-            return "Poziom 3 w trakcie realizacji"
+            return L10n.level3InProgress
         } else if level1Completed {
-            return "Poziom 2 w trakcie realizacji"
+            return L10n.level2InProgress
         } else {
-            return "Poziom 1 w trakcie realizacji"
+            return L10n.level1inProgress
         }
     }
 }
-
-
-
-

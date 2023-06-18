@@ -1,0 +1,88 @@
+/* 
+  Localizable.strings
+  Goals
+
+  Created by Dawid Łabno on 10/06/2023.
+  
+*/
+// All
+"Goals" = "Goals";
+"Info" = "Info";
+"Edit" = "Edit";
+"Save" = "Save";
+"Cancel" = "Cancel";
+"Error" = "Error";
+"OK" = "OK";
+"en" = "en";
+
+// Welcome screen
+"WelcomeMessage" = "Your list is empty. Take a moment and add your first goals for each area of your life.";
+"WelcomeButton" = "Add your first goal";
+"HowToUse" = "How to set your goals?";
+
+// Levels
+"GoalCompleted" = "Goal Completed";
+"Level1inProgress" = "Level 1 in progress";
+"Level2InProgress" = "Level 2 in progress";
+"Level3InProgress" = "Level 3 in progress";
+
+// GoalAddView
+"EditGoal" = "Edit Goal";
+"AddGoal" = "Add Goal";
+"ErrorMessage" = "You must complete the goal name, level names and expected completion dates";
+"BasicInfo" = "Basic information";
+"GoalName" = "Goal name";
+"Category" = "Category";
+"Spirituality" = "Spirituality";
+"Health" = "Health";
+"Work" = "Work and Finance";
+"Social" = "Social life";
+"PersonalDevelopment" = "Personal development";
+"Relax" = "Relax, hobby & free time";
+"Family" = "Family";
+"Assets" = "Assets";
+
+"AboutGoal" = "About the goal";
+"Goalinfo" = "Describe the goal you want to achieve";
+"LevelsDates" = "Levels and Dates";
+"Level1" = "Level 1";
+"Level2" = "Level 2";
+"Level3" = "Level 3";
+"CompletionDate" = "Completion date:";
+"CompletionDate1" = "Completion date (level 1):";
+"CompletionDate2" = "Completion date (level 2):";
+"CompletionDate3" = "Completion date (level 3):";
+
+// GoalDetailsView
+
+"GoalDeleted" = "This target has been removed.";
+"NotesSummaries" = "Notes and Summaries";
+
+//Notes
+
+"AddPhoto" = "Add photo";
+"NewNote" = "New note";
+
+
+// SettingsView
+
+"StartHere" = "Start here";
+"AboutAuthor" = "About the author";
+"AuthorDesc" = "Hi, I'm Dawid! If you want to learn more about how to organize your life, check out my projects👇";
+"AuthorWebsite" = "My homepage";
+"Instagram" = "Instagram";
+"Terms" = "Terms of use";
+"PrivacyPolicy" = "Privacy policy";
+"TermsService" = "Terms of service";
+
+// InstructionsView
+
+"About1" = "Three levels is a method of setting and achieving goals created by Mirek Burnejko. It consists in setting a large, main goal with an expected date of achievement, and then dividing it into 3 smaller levels - each with an expected date of achievement. After completing each level, you reward yourself. Bottle wine, dinner at a restaurant, excursion - you choose. Set the prizes in advance. Create a separate budget for them. Never forget about them.";
+
+"About2" = "Level 1 is about 30 percent of the main goal. Level 2 is 50 percent. Level 3 is 100 percent.";
+
+"About3" = "In the view of each goal, there is a \"Notes and summaries\" item. This is a place where you can summarize your goal progress each week or month. If you complete the level, you can also upload a photo of the award here - it will be something to remember.";
+
+"Link1" = "Explanation of the 3 levels method on the MiroBurn YouTube channel";
+
+"Link2" = "Online Course - Goal Setting School (PL)";

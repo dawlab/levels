@@ -14,13 +14,13 @@ struct StartTabView: View {
             GoalListView(viewModel: GoalViewModel())
                 .tabItem {
                     Image(systemName: "list.number")
-                    Text("Cele")
+                    Text(L10n.goals)
                 }
             
             SettingsView()
                 .tabItem {
                     Image(systemName: "info.circle")
-                    Text("Info")
+                    Text(L10n.info)
                 }
         }
     }

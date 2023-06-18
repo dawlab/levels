@@ -20,10 +20,16 @@
 		BDB5BB212A2CB49C00B16C57 /* StatTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB202A2CB49C00B16C57 /* StatTabView.swift */; };
 		BDB5BB272A2CB5E200B16C57 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */; };
 		BDB5BB2B2A2CB67000B16C57 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB2A2A2CB67000B16C57 /* InstructionsView.swift */; };
-		BDB5BB2D2A2CB67A00B16C57 /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB2C2A2CB67A00B16C57 /* AuthorView.swift */; };
+		BDB5BB382A2E46B700B16C57 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB372A2E46B600B16C57 /* NotesView.swift */; };
+		BDB5BB3C2A2E5D3100B16C57 /* NoteInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB3B2A2E5D3100B16C57 /* NoteInputView.swift */; };
+		BDB5BB3E2A2E5F9200B16C57 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB3D2A2E5F9200B16C57 /* Note.swift */; };
+		BDB5BB412A34B54900B16C57 /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = BDB5BB402A34B54900B16C57 /* L10n-swift */; };
+		BDB5BB442A34B84300B16C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDB5BB462A34B84300B16C57 /* Localizable.strings */; };
+		BDB5BB4B2A34BA4500B16C57 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BB4A2A34BA4500B16C57 /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4F0D582A366FC20070BFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BDB5BAFC2A2B7E5700B16C57 /* Goals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsApp.swift; sourceTree = "<group>"; };
 		BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -36,7 +42,12 @@
 		BDB5BB202A2CB49C00B16C57 /* StatTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTabView.swift; sourceTree = "<group>"; };
 		BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		BDB5BB2A2A2CB67000B16C57 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
-		BDB5BB2C2A2CB67A00B16C57 /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		BDB5BB372A2E46B600B16C57 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		BDB5BB3B2A2E5D3100B16C57 /* NoteInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteInputView.swift; sourceTree = "<group>"; };
+		BDB5BB3D2A2E5F9200B16C57 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		BDB5BB452A34B84300B16C57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BDB5BB492A34B8AA00B16C57 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BDB5BB4A2A34BA4500B16C57 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB5BB132A2B7EBA00B16C57 /* RealmSwift in Frameworks */,
+				BDB5BB412A34B54900B16C57 /* L10n-swift in Frameworks */,
 				BDB5BB112A2B7EBA00B16C57 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,11 +83,14 @@
 		BDB5BAFE2A2B7E5700B16C57 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
+				BD4F0D582A366FC20070BFA0 /* Info.plist */,
 				BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */,
 				BDB5BB1E2A2CB43300B16C57 /* Model */,
 				BDB5BB1F2A2CB47500B16C57 /* Views */,
+				BDB5BB4A2A34BA4500B16C57 /* Strings+Generated.swift */,
 				BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */,
 				BDB5BB052A2B7E5800B16C57 /* Preview Content */,
+				BDB5BB462A34B84300B16C57 /* Localizable.strings */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -93,6 +108,7 @@
 			children = (
 				BDB5BB0D2A2B7E7500B16C57 /* Goal.swift */,
 				BDB5BB142A2B80BD00B16C57 /* GoalViewModel.swift */,
+				BDB5BB3D2A2E5F9200B16C57 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +144,7 @@
 		BDB5BB242A2CB4DF00B16C57 /* GoalsDetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				BDB5BB352A2E465600B16C57 /* NotesView */,
 				BDB5BB1A2A2B88AC00B16C57 /* GoalDetailView.swift */,
 			);
 			path = GoalsDetailsView;
@@ -137,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				BDB5BB282A2CB65800B16C57 /* HowToUseThisApp */,
-				BDB5BB292A2CB66000B16C57 /* Author */,
 				BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */,
 			);
 			path = SettingsView;
@@ -151,12 +167,13 @@
 			path = HowToUseThisApp;
 			sourceTree = "<group>";
 		};
-		BDB5BB292A2CB66000B16C57 /* Author */ = {
+		BDB5BB352A2E465600B16C57 /* NotesView */ = {
 			isa = PBXGroup;
 			children = (
-				BDB5BB2C2A2CB67A00B16C57 /* AuthorView.swift */,
+				BDB5BB372A2E46B600B16C57 /* NotesView.swift */,
+				BDB5BB3B2A2E5D3100B16C57 /* NoteInputView.swift */,
 			);
-			path = Author;
+			path = NotesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +195,7 @@
 			packageProductDependencies = (
 				BDB5BB102A2B7EBA00B16C57 /* Realm */,
 				BDB5BB122A2B7EBA00B16C57 /* RealmSwift */,
+				BDB5BB402A34B54900B16C57 /* L10n-swift */,
 			);
 			productName = Goals;
 			productReference = BDB5BAFC2A2B7E5700B16C57 /* Goals.app */;
@@ -205,10 +223,12 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = BDB5BAF32A2B7E5600B16C57;
 			packageReferences = (
 				BDB5BB0F2A2B7EBA00B16C57 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				BDB5BB3F2A34B54900B16C57 /* XCRemoteSwiftPackageReference "L10n-swift" */,
 			);
 			productRefGroup = BDB5BAFD2A2B7E5700B16C57 /* Products */;
 			projectDirPath = "";
@@ -225,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB5BB072A2B7E5800B16C57 /* Preview Assets.xcassets in Resources */,
+				BDB5BB442A34B84300B16C57 /* Localizable.strings in Resources */,
 				BDB5BB042A2B7E5800B16C57 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,9 +262,12 @@
 				BDB5BB212A2CB49C00B16C57 /* StatTabView.swift in Sources */,
 				BDB5BB192A2B82B400B16C57 /* GoalListView.swift in Sources */,
 				BDB5BB152A2B80BD00B16C57 /* GoalViewModel.swift in Sources */,
-				BDB5BB2D2A2CB67A00B16C57 /* AuthorView.swift in Sources */,
+				BDB5BB382A2E46B700B16C57 /* NotesView.swift in Sources */,
+				BDB5BB3C2A2E5D3100B16C57 /* NoteInputView.swift in Sources */,
 				BDB5BB1D2A2C91FA00B16C57 /* GoalAddView.swift in Sources */,
+				BDB5BB3E2A2E5F9200B16C57 /* Note.swift in Sources */,
 				BDB5BB0E2A2B7E7500B16C57 /* Goal.swift in Sources */,
+				BDB5BB4B2A34BA4500B16C57 /* Strings+Generated.swift in Sources */,
 				BDB5BB2B2A2CB67000B16C57 /* InstructionsView.swift in Sources */,
 				BDB5BB002A2B7E5700B16C57 /* GoalsApp.swift in Sources */,
 			);
@@ -251,11 +275,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		BDB5BB462A34B84300B16C57 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB5BB452A34B84300B16C57 /* en */,
+				BDB5BB492A34B8AA00B16C57 /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		BDB5BB082A2B7E5800B16C57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -316,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -377,6 +415,10 @@
 				DEVELOPMENT_TEAM = 729RS4Z3AS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Goals/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Levels;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app requires access to your photo library to allow you to select a photo for your goal progress.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,9 +431,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.dawlab.Goals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -406,6 +451,10 @@
 				DEVELOPMENT_TEAM = 729RS4Z3AS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Goals/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Levels;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Our app requires access to your photo library to allow you to select a photo for your goal progress.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -418,9 +467,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.dawlab.Goals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -456,6 +508,14 @@
 				kind = branch;
 			};
 		};
+		BDB5BB3F2A34B54900B16C57 /* XCRemoteSwiftPackageReference "L10n-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Decybel07/L10n-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -468,6 +528,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BDB5BB0F2A2B7EBA00B16C57 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		BDB5BB402A34B54900B16C57 /* L10n-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDB5BB3F2A34B54900B16C57 /* XCRemoteSwiftPackageReference "L10n-swift" */;
+			productName = "L10n-swift";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

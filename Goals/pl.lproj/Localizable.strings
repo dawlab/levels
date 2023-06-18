@@ -1,0 +1,84 @@
+/* 
+  Localizable.strings
+  Goals
+
+  Created by Dawid Łabno on 10/06/2023.
+  
+*/
+
+// All
+"Goals" = "Cele";
+"Info" = "Info";
+"Edit" = "Edytuj";
+"Save" = "Zapisz";
+"Cancel" = "Anuluj";
+"Error" = "Błąd";
+"OK" = "OK";
+"en" = "en";
+
+// Welcome screen
+"WelcomeMessage" = "Twoja lista jest pusta. Znajdź wolną chwilę i ustal swoje cele. Skorzystaj z samouczka, aby zrobić to prawidłowo.";
+"WelcomeButton" = "Dodaj swój pierwszy cel";
+"HowToUse" = "Jak wyznaczać cele?";
+
+// Levels
+"GoalCompleted" = "Cel zrealizowany";
+"Level1inProgress" = "Poziom 1 w trakcie realizacji";
+"Level2InProgress" = "Poziom 2 w trakcie realizacji";
+"Level3InProgress" = "Poziom 3 w trakcie realizacji";
+
+// GoalAddView
+"EditGoal" = "Edytuj cel";
+"AddGoal" = "Dodaj cel";
+"ErrorMessage" = "Musisz uzupełnić nazwę celu, nazwy poziomów i daty realizacji";
+"BasicInfo" = "Podstawowe informacje";
+"GoalName" = "Nazwa celu";
+"Category" = "Kategoria";
+"Spirituality" = "Duchowość";
+"Health" = "Zdrowie";
+"Work" = "Praca i finanse";
+"Social" = "Życie towarzyskie";
+"PersonalDevelopment" = "Rozwój osobisty";
+"Relax" = "Relaks, hobby i czas wolny";
+"Family" = "Rodzina";
+"Assets" = "Posiadanie";
+
+"AboutGoal" = "O tym celu";
+"Goalinfo" = "Dokładnie opisz cel, który zamierzasz osiągnąć. Dlaczego chcesz to zrobić? Co wniesie w Twoje życie?";
+"LevelsDates" = "Poziomy i daty";
+"Level1" = "Poziom 1";
+"Level2" = "Poziom 2";
+"Level3" = "Poziom 3";
+"CompletionDate" = "Data realizacji:";
+
+// GoalDetailsView
+
+"GoalDeleted" = "Ten cel został usunięty";
+"NotesSummaries" = "Notatki i podsumowania";
+
+//Notes
+
+"AddPhoto" = "Dodaj zdjęcie";
+"NewNote" = "Nowa notatka";
+
+
+// SettingsView
+
+"StartHere" = "Zacznij tutaj";
+"AboutAuthor" = "O autorze";
+"AuthorDesc" = "Cześć, jestem Dawid! Jeśli chcesz dowiedzieć się więcej o tym, jak dobrze zorganizować swoje życie, to sprawdź moje projekty👇";
+"AuthorWebsite" = "Moja strona";
+"Instagram" = "Instagram";
+"Terms" = "Zasady korzystania";
+"PrivacyPolicy" = "Polityka prywatności";
+"TermsService" = "Regulamin";
+
+// InstructionsView
+
+"About1" = "Trzy poziomy to metoda ustalania i osiągania celów stworzona przez Mirka Burnejko. Polega na ustaleniu dużego, głównego celu wraz z oczekiwaną datą realizacji, a następnie podzieleniu go na 3 mniejsze poziomy - każdy z oczekiwaną datą realizacji. Po realizacji każdego poziomu nagradzasz się. Butelka wina, kolacja w restauracji, wycieczka - sam wybierz. Ustal wcześniej nagrody. Stwórz na nie osobny budżet. Nigdy o nich nie zapominaj.";
+
+"About2" = "Poziom 1 to około 30 procent celu głównego. Poziom 2 to 50 procent. Poziom 3 to 100% procent.";
+
+"About3" = "W widoku każdego celu jest pozycja \"Notatki i podsumowania\". To miejsce, w którym możesz każdego tygodnia lub miesiąca podsumować swoje dążenie do celu. Jeśli zrealizujesz poziom , to możesz wrzucić tu też zdjęcie nagrody - będzie co wspominać.";
+"Link1" = "Wyjaśnienie metody 3 poziomy na kanale MiroBurn";
+"Link2" = "Kurs online - Szkoła Ustalania Celów";

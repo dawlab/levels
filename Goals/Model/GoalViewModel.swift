@@ -47,11 +47,21 @@ class GoalViewModel: ObservableObject {
 
         // Convert the index set to an array of goals
         let goalsToDelete = offsets.map { goals[$0] }
+
+        // Store the objects' IDs
+        let idsToDelete = goalsToDelete.map { $0.id }
         
+        // Find the objects in the database again before deleting
+        let objectsToDelete = idsToDelete.compactMap { realm.object(ofType: Goal.self, forPrimaryKey: $0) }
+
         try! realm.write {
-            realm.delete(goalsToDelete)
+            realm.delete(objectsToDelete)
         }
+
+        // After deletion, make sure to update the 'goals' property
+        goals = realm.objects(Goal.self)
     }
+
     
     func updateGoal(_ goal: Goal, name: String, description: String, level1: String, level1Date: Date?, level2: String, level2Date: Date?, level3: String, level3Date: Date?, category: String, notes: String) {
         let realm = try! Realm()
@@ -65,7 +75,6 @@ class GoalViewModel: ObservableObject {
             goal.level3 = level3
             goal.level3Date = level3Date
             goal.category = category
-            goal.notes = notes
         }
     }
     

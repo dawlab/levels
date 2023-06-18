@@ -8,42 +8,56 @@
 import SwiftUI
 
 struct SettingsView: View {
-
+    
     var body: some View {
         NavigationView {
             List {
-                Section {
+                Section(header: Text(L10n.startHere)) {
                     NavigationLink(destination: InstructionsView()) {
                         HStack {
                             Image(systemName: "questionmark.circle").foregroundColor(.blue)
-                            Text("How to use this app?")
+                            Text(L10n.howToUse)
                         }
                     }
                 }
                 
-                Section {
-                    NavigationLink(destination: AuthorView()) {
-                        HStack {
-                            Image(systemName: "person").foregroundColor(.blue)
-                            Text("About the author")
+                Section(header: Text(L10n.aboutAuthor)) {
+                    HStack {
+                        Image("avatar")
+                            .resizable()
+                            .cornerRadius(50)
+                            .padding(.all, 4)
+                            .frame(width: 100, height: 100)
+                            .background(Color.black.opacity(0.2))
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(Circle())
+                            .padding(8)
+                        Text(L10n.authorDesc)
+                    }
+                    HStack {
+                        Image(systemName: "arrowshape.turn.up.right.fill").foregroundColor(.blue)
+                        Link(destination: URL(string: "https://lnk.bio/dawlab")!) {
+                            Text(L10n.authorWebsite)
                         }
+                        Spacer()
+                        Image(systemName: "link")
                     }
                     
                     HStack {
                         Image(systemName: "arrowshape.turn.up.right.fill").foregroundColor(.blue)
-                        Link(destination: URL(string: "https://instagram.com/felice.app")!) {
-                            Text("Instagram")
+                        Link(destination: URL(string: "https://instagram.com/dwlbno")!) {
+                            Text(L10n.instagram)
                         }
                         Spacer()
                         Image(systemName: "link")
                     }
                 }
                 
-                Section {
+                Section(header: Text(L10n.terms)) {
                     HStack {
                         Image(systemName: "doc.text.magnifyingglass").foregroundColor(.blue)
-                        Link(destination: URL(string: "https://zenslo.com/felice-privacy-policy/")!) {
-                            Text("Privacy policy")
+                        Link(destination: URL(string: "https://zenslo.com/zenslo-apps-privacy-policy/")!) {
+                            Text(L10n.privacyPolicy)
                         }
                         Spacer()
                         Image(systemName: "link")
@@ -51,15 +65,15 @@ struct SettingsView: View {
                     
                     HStack {
                         Image(systemName: "doc.text.magnifyingglass").foregroundColor(.blue)
-                        Link(destination: URL(string: "https://zenslo.com/felice-terms-conditions/")!) {
-                            Text("Conditions")
+                        Link(destination: URL(string: "https://zenslo.com/zenslo-apps-terms-of-use/")!) {
+                            Text(L10n.termsService)
                         }
                         Spacer()
                         Image(systemName: "link")
                     }
                 }
             }
-            .navigationBarTitle("Settings", displayMode: .inline)
+            .navigationBarTitle(L10n.info, displayMode: .inline)
         }
     }
 }
