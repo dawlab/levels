@@ -6,8 +6,38 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct SettingsView: View {
+    @State private var isShowingPicker = false
+    @State private var isShowingImporter = false
+    
+    private var temporaryDirectory: URL {
+        FileManager.default.temporaryDirectory
+    }
+    
+    private func exportDatabase() {
+        let originalFileUrl = Realm.Configuration.defaultConfiguration.fileURL!
+        let temporaryFileUrl = temporaryDirectory.appendingPathComponent(originalFileUrl.lastPathComponent)
+        
+        do {
+            // Jeśli plik istnieje już w lokalizacji tymczasowej, usuń go.
+            if FileManager.default.fileExists(atPath: temporaryFileUrl.path) {
+                try FileManager.default.removeItem(at: temporaryFileUrl)
+            }
+            
+            // Skopiuj plik do lokalizacji tymczasowej.
+            try FileManager.default.copyItem(at: originalFileUrl, to: temporaryFileUrl)
+            
+            // Otwórz selektor plików do eksportu.
+            isShowingPicker = true
+        } catch {
+            // Obsłuż błędy związane z operacjami na plikach.
+            print("Failed to copy file: \(error)")
+        }
+    }
+    
+    @EnvironmentObject var goalViewModel: GoalViewModel
     
     var body: some View {
         NavigationView {
@@ -17,6 +47,29 @@ struct SettingsView: View {
                         HStack {
                             Image(systemName: "questionmark.circle").foregroundColor(.blue)
                             Text(L10n.howToUse)
+                        }
+                    }
+                }
+                
+                Section(header: Text(L10n.levelsPremium)) {
+                    HStack {
+                        Image(systemName: "arrow.up.doc").foregroundColor(.blue)
+                        Button(L10n.export) {
+                            exportDatabase()
+                        }
+                        .sheet(isPresented: $isShowingPicker) {
+                            DocumentPicker(url: temporaryDirectory.appendingPathComponent(Realm.Configuration.defaultConfiguration.fileURL!.lastPathComponent))
+                        }
+                    }
+                    
+                    HStack {
+                        Image(systemName: "arrow.down.doc").foregroundColor(.blue)
+                        Button(L10n.import) {
+                            isShowingImporter = true
+                        }
+                        .sheet(isPresented: $isShowingImporter) {
+                            DocumentImporter(url: Realm.Configuration.defaultConfiguration.fileURL!)
+                                .environmentObject(goalViewModel)
                         }
                     }
                 }
@@ -66,7 +119,7 @@ struct SettingsView: View {
                     HStack {
                         Image(systemName: "doc.text.magnifyingglass").foregroundColor(.blue)
                         Link(destination: URL(string: "https://zenslo.com/zenslo-apps-terms-of-use/")!) {
-                            Text(L10n.termsService)
+                            Text(L10n.termsConditions)
                         }
                         Spacer()
                         Image(systemName: "link")
@@ -81,6 +134,7 @@ struct SettingsView: View {
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .environmentObject(GoalViewModel())
     }
 }
 

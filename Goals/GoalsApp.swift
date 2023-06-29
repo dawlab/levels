@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct GoalsApp: App {
+    @StateObject private var goalViewModel = GoalViewModel() // Tworzenie instancji GoalViewModel
     var body: some Scene {
         WindowGroup {
             StartTabView()
+                .environmentObject(goalViewModel)
         }
     }
 }

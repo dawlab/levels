@@ -54,6 +54,8 @@ internal enum L10n {
   internal static let error = L10n.tr("Localizable", "Error", fallback: "Error")
   /// You must complete the goal name, level names and expected completion dates
   internal static let errorMessage = L10n.tr("Localizable", "ErrorMessage", fallback: "You must complete the goal name, level names and expected completion dates")
+  /// Export data to file
+  internal static let export = L10n.tr("Localizable", "Export", fallback: "Export data to file")
   /// Family
   internal static let family = L10n.tr("Localizable", "Family", fallback: "Family")
   /// Goal Completed
@@ -73,6 +75,8 @@ internal enum L10n {
   internal static let health = L10n.tr("Localizable", "Health", fallback: "Health")
   /// How to set your goals?
   internal static let howToUse = L10n.tr("Localizable", "HowToUse", fallback: "How to set your goals?")
+  /// import data from file
+  internal static let `import` = L10n.tr("Localizable", "Import", fallback: "import data from file")
   /// Info
   internal static let info = L10n.tr("Localizable", "Info", fallback: "Info")
   /// Instagram
@@ -91,6 +95,8 @@ internal enum L10n {
   internal static let level3InProgress = L10n.tr("Localizable", "Level3InProgress", fallback: "Level 3 in progress")
   /// Levels and Dates
   internal static let levelsDates = L10n.tr("Localizable", "LevelsDates", fallback: "Levels and Dates")
+  /// Levels Premium
+  internal static let levelsPremium = L10n.tr("Localizable", "LevelsPremium", fallback: "Levels Premium")
   /// Explanation of the 3 levels method on the MiroBurn YouTube channel
   internal static let link1 = L10n.tr("Localizable", "Link1", fallback: "Explanation of the 3 levels method on the MiroBurn YouTube channel")
   /// Online Course - Goal Setting School (PL)
@@ -118,7 +124,7 @@ internal enum L10n {
   /// Terms of use
   internal static let terms = L10n.tr("Localizable", "Terms", fallback: "Terms of use")
   /// Terms of service
-  internal static let termsService = L10n.tr("Localizable", "TermsService", fallback: "Terms of service")
+  internal static let termsConditions = L10n.tr("Localizable", "TermsConditions", fallback: "Terms of service")
   /// Add your first goal
   internal static let welcomeButton = L10n.tr("Localizable", "WelcomeButton", fallback: "Add your first goal")
   /// Your list is empty. Take a moment and add your first goals for each area of your life.

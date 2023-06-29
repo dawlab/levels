@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD578E4F2A4B6FB7005427B6 /* DocumentImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD578E4E2A4B6FB7005427B6 /* DocumentImporter.swift */; };
+		BD578E512A4B7003005427B6 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD578E502A4B7003005427B6 /* DocumentPicker.swift */; };
 		BDB5BB002A2B7E5700B16C57 /* GoalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */; };
 		BDB5BB042A2B7E5800B16C57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */; };
 		BDB5BB072A2B7E5800B16C57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB5BB062A2B7E5800B16C57 /* Preview Assets.xcassets */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		BD4F0D582A366FC20070BFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BD578E4E2A4B6FB7005427B6 /* DocumentImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentImporter.swift; sourceTree = "<group>"; };
+		BD578E502A4B7003005427B6 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		BDB5BAFC2A2B7E5700B16C57 /* Goals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB5BAFF2A2B7E5700B16C57 /* GoalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsApp.swift; sourceTree = "<group>"; };
 		BDB5BB032A2B7E5800B16C57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			children = (
 				BDB5BB282A2CB65800B16C57 /* HowToUseThisApp */,
 				BDB5BB262A2CB5E200B16C57 /* SettingsView.swift */,
+				BD578E4E2A4B6FB7005427B6 /* DocumentImporter.swift */,
+				BD578E502A4B7003005427B6 /* DocumentPicker.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -257,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD578E4F2A4B6FB7005427B6 /* DocumentImporter.swift in Sources */,
 				BDB5BB1B2A2B88AC00B16C57 /* GoalDetailView.swift in Sources */,
 				BDB5BB272A2CB5E200B16C57 /* SettingsView.swift in Sources */,
 				BDB5BB212A2CB49C00B16C57 /* StatTabView.swift in Sources */,
@@ -269,6 +276,7 @@
 				BDB5BB0E2A2B7E7500B16C57 /* Goal.swift in Sources */,
 				BDB5BB4B2A34BA4500B16C57 /* Strings+Generated.swift in Sources */,
 				BDB5BB2B2A2CB67000B16C57 /* InstructionsView.swift in Sources */,
+				BD578E512A4B7003005427B6 /* DocumentPicker.swift in Sources */,
 				BDB5BB002A2B7E5700B16C57 /* GoalsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +444,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -472,7 +480,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

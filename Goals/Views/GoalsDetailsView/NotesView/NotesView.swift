@@ -23,7 +23,7 @@ struct NotesView: View {
     var body: some View {
         VStack {
             List {
-                ForEach(goal.notes.sorted(byKeyPath: "date", ascending: false), id: \.self) { note in
+                ForEach(Array(goal.notes.sorted(byKeyPath: "date", ascending: false)), id: \.self) { note in
                     Section(header: Text(formattedDate(note.date))) {
                         VStack(alignment: .leading) {
                             Text(note.content)
@@ -36,6 +36,7 @@ struct NotesView: View {
                         }
                     }
                 }
+                .onDelete(perform: deleteNote)
             }
         }
         .navigationTitle(L10n.notesSummaries)
@@ -47,19 +48,10 @@ struct NotesView: View {
             }
         )
         .sheet(isPresented: $showingInput) {
-            NoteInputView(isPresented: $showingInput) { noteText, imageData in
-                addNewNote(noteText, imageData: imageData)
-            }
+           
         }
     }
 
-    private func addNewNote(_ noteText: String, imageData: Data?) {
-        let realm = try! Realm()
-        try! realm.write {
-            goal.notes.append(Note(content: noteText, date: Date(), imageData: imageData))
-        }
-    }
-    
     private func formattedDate(_ date: Date) -> String {
         let preferredLanguage = Locale.preferredLanguages.first ?? ""
         let locale = Locale(identifier: preferredLanguage)
@@ -71,4 +63,15 @@ struct NotesView: View {
         
         return formatter.string(from: date)
     }
+    
+    private func deleteNote(at offsets: IndexSet) {
+        let realm = try! Realm()
+        try! realm.write {
+            let notesToDelete = offsets.map { goal.notes[$0] }
+            realm.delete(notesToDelete)
+        }
+    }
 }
+
+
+

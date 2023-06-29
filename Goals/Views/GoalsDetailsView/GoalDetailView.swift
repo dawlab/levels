@@ -11,7 +11,7 @@ import RealmSwift
 struct GoalDetailView: View {
     @ObservedObject var goal: Goal
     @State private var showingEditGoal = false
-    @State private var isGoalDeleted = false  // Dodajemy nowy stan
+    @State private var isGoalDeleted = false
     
     var body: some View {
         if isGoalDeleted {
@@ -100,9 +100,11 @@ struct GoalDetailView: View {
                     }
                 }
             }
-            .navigationTitle(goal.name)
-            .navigationBarItems(trailing: Button(L10n.edit) {
+            .navigationBarTitle(Text(goal.name)) // Używamy navigationBarTitle zamiast navigationTitle
+            .navigationBarItems(trailing: Button(action: {
                 showingEditGoal = true
+            }) {
+                Text(L10n.edit)
             })
             .onReceive(goal.objectWillChange) {
                 if goal.isInvalidated {
@@ -129,5 +131,4 @@ struct GoalDetailView: View {
         return formatter.string(from: date)
     }
 }
-
 

@@ -71,7 +71,10 @@
 "Instagram" = "Instagram";
 "Terms" = "Zasady korzystania";
 "PrivacyPolicy" = "Polityka prywatności";
-"TermsService" = "Regulamin";
+"TermsConditions" = "Regulamin";
+"LevelsPremium" = "Levels Premium";
+"Export" = "Eksportuj dane do pliku";
+"Import" = "Importuj dane z pliku";
 
 // InstructionsView
 
